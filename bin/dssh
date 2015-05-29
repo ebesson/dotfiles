@@ -1,0 +1,4 @@
+#!/bin/sh
+#
+
+ddig='dig axfr local | grep'

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+COMMAND="docker build -t $(whoami)/$(basename $(pwd)) ."
+
+echo ${COMMAND}
+echo
+
+${COMMAND}

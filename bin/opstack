@@ -1,0 +1,7 @@
+IP=$1
+
+# Remove previous key
+ssh-keygen -f "/home/ebesson/.ssh/known_hosts" -R 192.168.48.$IP
+
+# Try to connect previous key
+ssh -o StrictHostKeyChecking=no ubuntu@192.168.48.$IP
