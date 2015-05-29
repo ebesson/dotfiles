@@ -1,0 +1,18 @@
+## intelliJ
+.idea/
+*.iml
+
+## eclipse
+.settings/
+.classpath
+.project
+bin/
+
+## maven
+target/
+
+## osx
+.DS_Store
+
+## jenv
+.java-version

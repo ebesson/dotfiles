@@ -1,0 +1,4 @@
+case $- in *i*) . ~/.bashrc;; esac
+
+#Since docker 1.5
+export NO_PROXY=/var/run/docker.sock
