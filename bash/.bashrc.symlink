@@ -178,7 +178,11 @@ unset config_file
 PATH=${DOTFILES}/bin:${PATH}
 
 # Pyhton virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
+
+if [ -f /usr/local/bin/virtualenvwrapper.sh ];
+then 
+  source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR JENV TO WORK!!!
 [[ -s "/home/ebesson/.jenv/bin/jenv-init.sh" ]] && source "/home/ebesson/.jenv/bin/jenv-init.sh" && source "/home/ebesson/.jenv/commands/completion.sh"
