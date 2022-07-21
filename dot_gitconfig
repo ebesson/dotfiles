@@ -49,7 +49,7 @@
         ui = true
 [push]
 	default = upstream
-
+	autoSetupRemote = true
 [branch]
 	autosetuprebase=always
 
