@@ -3,7 +3,7 @@
   ansible.builtin.unarchive:
     src: "{{ aqua_installer_url }}"
     dest: "{{ aqua_installer_destination }}"
-    remote_src: yes
+    remote_src: true
     owner: root
     group: root
     mode: 0655
