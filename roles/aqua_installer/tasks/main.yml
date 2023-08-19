@@ -1,5 +1,5 @@
 ---
-- name: aqua-installer | download and install aqua
+- name: Aqua_installer | download and install aqua
   ansible.builtin.unarchive:
     src: "{{ aqua_installer_url }}"
     dest: "{{ aqua_installer_destination }}"

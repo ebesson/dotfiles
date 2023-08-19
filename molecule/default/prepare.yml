@@ -19,20 +19,15 @@
         - tar
         - unzip
       when: ansible_os_family == 'Debian'
-    - name: Ensure user travis exists
+    - name: Ensure user exists
+      become: true
       ansible.builtin.user:
-        name: travis
+        name: "{{ lookup('ansible.builtin.env', 'USER') }}"
         create_home: true
         state: present
-    - name: Ensure file "/home/travis/.profile" exists
-      ansible.builtin.file:
-        name: "/home/travis/.profile"
-        state: touch
-        owner: "travis"
-        mode: 0x600
 
 - name: Install aqua
   hosts: all
   gather_facts: true
   roles:
-    - aqua-installer
+    - aqua_installer
