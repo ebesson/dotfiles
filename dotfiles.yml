@@ -1,4 +1,5 @@
 ---
 - name: Deploy dot files
   hosts: all
-  roles: []
+  roles:
+    - dotfiles
