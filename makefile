@@ -36,6 +36,10 @@ prepare: ## Install dependencies needed to run this playbook
 	@sudo pip3 install tox
 	@tox
 
+lint: ## Lint
+	yamllint .
+	ansible-lint .
+
 check: ## Checks workstation.yml playbook
 	@$(ANSIBLE) --check
 
