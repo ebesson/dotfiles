@@ -1,0 +1,11 @@
+---
+- name: aqua-installer | download and install aqua
+  ansible.builtin.unarchive:
+    src: "{{ aqua_installer_url }}"
+    dest: "{{ aqua_installer_destination }}"
+    remote_src: yes
+    owner: root
+    group: root
+    mode: 0655
+  tags:
+    - aqua

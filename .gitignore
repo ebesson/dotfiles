@@ -1,0 +1,10 @@
+*.retry
+*.pyc
+.cache
+.molecule
+*.retry
+.pytest_cache
+*.log% 
+__pycache__
+report.xml
+.tox/

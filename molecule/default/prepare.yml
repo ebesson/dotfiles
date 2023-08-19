@@ -1,0 +1,38 @@
+---
+- name: Prepare
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Install python3 for Ansible
+      ansible.builtin.raw: test -e /usr/bin/python3 || (apt -y update && apt install -y python3-minimal)
+      become: true
+      changed_when: false
+    - name: Install base packages
+      become: true
+      ansible.builtin.apt:
+        name: "{{ item }}"
+        update_cache: true
+      with_items:
+        - wget
+        - curl
+        - python3-pip
+        - tar
+        - unzip
+      when: ansible_os_family == 'Debian'
+    - name: Ensure user travis exists
+      ansible.builtin.user:
+        name: travis
+        create_home: true
+        state: present
+    - name: Ensure file "/home/travis/.profile" exists
+      ansible.builtin.file:
+        name: "/home/travis/.profile"
+        state: touch
+        owner: "travis"
+        mode: 0x600
+
+- name: Install aqua
+  hosts: all
+  gather_facts: true
+  roles:
+    - aqua-installer
