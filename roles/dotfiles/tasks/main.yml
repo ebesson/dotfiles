@@ -1,11 +1,13 @@
 ---
-- name: "Dotfiles add configuration files"
+- name: "Deploy aqua configuration"
   become: true
   ansible.builtin.copy:
-    src: "{{ item }}"
+    src: "aqua.yml"
     dest: "/home/{{ dotfiles_user }}"
     owner: "{{ dotfiles_user }}"
     group: "{{ dotfiles_user }}"
     mode: 0644
-  with_items: ['aqua.yml']
-  tags: dotfiles
+  notify: update aqua
+
+- name: Flush handlers
+  ansible.builtin.meta: "flush_handlers"
