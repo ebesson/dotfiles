@@ -3,6 +3,8 @@
   hosts: all
   roles:
     - bases_packages
+    - pipx_tools
+
 - name: Deploy dot files
   hosts: all
   tags:

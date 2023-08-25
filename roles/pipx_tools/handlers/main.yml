@@ -1,0 +1,3 @@
+---
+- name: add pipx to path
+  ansible.builtin.command: python3 -m pipx ensurepath

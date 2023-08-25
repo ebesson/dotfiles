@@ -1,0 +1,4 @@
+---
+pipx_tools:
+  - pre-commit
+  - "git+https://github.com/ebesson/git-sync"

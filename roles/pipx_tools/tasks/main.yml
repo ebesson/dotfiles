@@ -1,0 +1,25 @@
+---
+- name: Pipx_tools | ensure pip is installed
+  become: true
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - python3-pip
+    - python3-venv
+
+- name: Pipx_tools | install pipx with pip
+  ansible.builtin.pip:
+    name: "pipx==1.2.0"
+    state: present
+  notify: add pipx to path
+
+- name: Pipx_tools | flush handlers
+  ansible.builtin.meta: "flush_handlers"
+
+- name: Pipx_tools | install tools with pipx
+  community.general.pipx:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ pipx_tools }}"
+  changed_when: false
