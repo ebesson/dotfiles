@@ -1,5 +1,11 @@
 ---
+- name: Deploy tools
+  hosts: all
+  roles:
+    - bases_packages
 - name: Deploy dot files
   hosts: all
+  tags:
+    - dotfiles
   roles:
     - dotfiles

@@ -1,0 +1,8 @@
+---
+- name: Bases_packages | install base packages
+  become: true
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: true
+  loop: "{{ bases_packages }}"

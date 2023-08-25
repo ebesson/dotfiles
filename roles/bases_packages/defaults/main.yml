@@ -1,0 +1,11 @@
+---
+bases_packages:
+  - git
+  - htop
+  - sshpass
+  - terminator
+  - tmux
+  - unzip
+  - vim
+  - zsh
+  - zip
