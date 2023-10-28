@@ -13,7 +13,7 @@ packages:
   - name: jesseduffield/lazygit@v0.40.2
   - name: junegunn/fzf@0.43.0
   - name: kubernetes-sigs/kind@v0.20.0
-  - name: marp-team/marp-cli@v3.3.1
+  - name: marp-team/marp-cli@v3.4.0
   - name: profclems/glab@v1.22.0
   - name: txn2/kubefwd@1.22.5
   - name: wagoodman/dive@v0.11.0
