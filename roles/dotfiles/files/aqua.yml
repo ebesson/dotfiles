@@ -8,7 +8,7 @@ packages:
   - name: cli/cli@v2.38.0
   - name: derailed/k9s@v0.28.0
   - name: derailed/popeye@v0.11.1
-  - name: FairwindsOps/pluto@v5.18.5
+  - name: FairwindsOps/pluto@v5.18.6
   - name: go-task/task@v3.31.0
   - name: jesseduffield/lazygit@v0.40.2
   - name: junegunn/fzf@0.43.0
