@@ -5,7 +5,7 @@ registries:
   - type: standard
     ref: v4.125.0  # renovate: depName=aquaproj/aqua-registry
 packages:
-  - name: cli/cli@v2.42.1
+  - name: cli/cli@v2.43.1
   - name: derailed/k9s@v0.31.7
   - name: derailed/popeye@v0.11.2
   - name: FairwindsOps/pluto@v5.19.0
