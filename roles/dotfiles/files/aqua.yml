@@ -10,7 +10,7 @@ packages:
   - name: derailed/popeye@v0.21.3
   - name: FairwindsOps/pluto@v5.19.3
   - name: go-task/task@v3.37.2
-  - name: jesseduffield/lazygit@v0.41.0
+  - name: jesseduffield/lazygit@v0.42.0
   - name: junegunn/fzf@0.52.1
   - name: kubernetes-sigs/kind@v0.23.0
   - name: marp-team/marp-cli@v3.4.0
