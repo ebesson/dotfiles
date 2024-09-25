@@ -9,7 +9,7 @@ packages:
   - name: derailed/k9s@v0.32.5
   - name: derailed/popeye@v0.21.3
   - name: FairwindsOps/pluto@v5.20.3
-  - name: go-task/task@v3.38.0
+  - name: go-task/task@v3.39.2
   - name: jesseduffield/lazygit@v0.44.1
   - name: junegunn/fzf@v0.55.0
   - name: kubernetes-sigs/kind@v0.24.0
