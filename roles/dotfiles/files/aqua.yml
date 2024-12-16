@@ -12,7 +12,7 @@ packages:
   - name: go-task/task@v3.39.2
   - name: jesseduffield/lazygit@v0.44.1
   - name: junegunn/fzf@v0.55.0
-  - name: kubernetes-sigs/kind@v0.24.0
+  - name: kubernetes-sigs/kind@v0.26.0
   - name: marp-team/marp-cli@v3.4.0
   - name: profclems/glab@v1.22.0
   - name: txn2/kubefwd@1.22.5
