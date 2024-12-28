@@ -11,7 +11,7 @@ packages:
   - name: FairwindsOps/pluto@v5.21.0
   - name: go-task/task@v3.40.1
   - name: jesseduffield/lazygit@v0.44.1
-  - name: junegunn/fzf@v0.55.0
+  - name: junegunn/fzf@v0.57.0
   - name: kubernetes-sigs/kind@v0.26.0
   - name: marp-team/marp-cli@v3.4.0
   - name: profclems/glab@v1.22.0
