@@ -16,4 +16,4 @@ packages:
   - name: marp-team/marp-cli@v4.0.4
   - name: profclems/glab@v1.22.0
   - name: txn2/kubefwd@1.22.5
-  - name: wagoodman/dive@v0.12.0
+  - name: wagoodman/dive@v0.13.1
