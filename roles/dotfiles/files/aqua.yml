@@ -15,5 +15,5 @@ packages:
   - name: kubernetes-sigs/kind@v0.30.0
   - name: marp-team/marp-cli@v4.2.3
   - name: profclems/glab@v1.22.0
-  - name: txn2/kubefwd@1.22.5
+  - name: txn2/kubefwd@v1.25.16
   - name: wagoodman/dive@v0.13.1
